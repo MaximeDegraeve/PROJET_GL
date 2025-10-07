@@ -112,12 +112,12 @@ config_stop = {
     "data": [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0]
 }
 
-# Configuration 4 : INVALIDE - Batch size trop grand ❌
+# Configuration 4 : INVALIDE - Batch size trop grand 
 config_invalide_batch = {
     "action": "start",
     "architecture": {
         "model_type": "lstm",
-        "batch_size": 1000,  # ❌ > 512
+        "batch_size": 1000,  #  > 512
         "num_layers": 3
     },
     "optimisation": {
@@ -128,7 +128,7 @@ config_invalide_batch = {
     "data": [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0]
 }
 
-# Configuration 5 : INVALIDE - Learning rate trop grand ❌
+# Configuration 5 : INVALIDE - Learning rate trop grand 
 config_invalide_lr = {
     "action": "start",
     "architecture": {
@@ -137,7 +137,7 @@ config_invalide_lr = {
         "num_layers": 4
     },
     "optimisation": {
-        "learning_rate": 1.5,  # ❌ >= 1
+        "learning_rate": 1.5,  # X >= 1
         "epochs": 100
     },
     "horizon": 24,
